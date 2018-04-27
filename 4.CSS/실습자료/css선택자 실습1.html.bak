@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>css선택자 실습1</title>
+  <style>
+	p{
+		color:red;
+	}
+	
+	#id2{
+		color:green;
+		background:yellow;
+	}
+
+	.class1{
+		color:purple;
+		background:gray;
+	}
+
+	.class2{
+		color:red;
+	}
+
+	input[type=text], input[name=searchText]{
+		color:purple;
+	}
+	
+/*	input[name=searchText]{
+		color:orange;
+	}*/
+
+ 
+  </style>
+ </head>
+ <body>
+	 <h1>CSS 기본 선택자</h1>
+	 <p> 선택자란?<br>
+	 특정한 HTML 태그를 선택할 때 사용하는 기능으로, 태그를 선택하여 원하는 스타일과 기능을 적용할 수 있다.
+	 </p>
+	 <hr>
+	 <h2>모든 선택자</h2>
+	 <p>HTML 문서 안의 모든 태그를 선택할 때 적체 선택자를 사용할 수 있다.</p>
+	 <ul>
+		<li>테스트1</li>
+		<li>테스트2</li>
+		<li>테스트3</li>
+	 </ul>
+	 <hr>
+	 <h2>태그 선택자</h2>
+	 <p>HTML 문서 내에 같은 태그를 모두 선택할 때 사용한다.</p>
+	 <pre> - p {color : red;} 와 같은 형태로 사용된다.</pre>
+	 <hr>
+	 <h2>아이디 선택자</h2>
+	 <p>HTML 문서 내에 해당하는 아이디 속성의 값을 가진 태그만 선택할 때 사용한다.</p>
+	 <pre> - #아이디명 {color : blue;} 와 같은 형태로 사용된다.</pre>
+	 <ol>
+		<li id="id1">아이디 선택자 테스트1</li>
+		<li id="id2">아이디 선택자 테스트2</li>
+		<li id="id3">아이디 선택자 테스트3</li>
+		<li id="id4">아이디 선택자 테스트4</li>
+		<li id="id5">아이디 선택자 테스트5</li>
+	 </ol>
+	 <hr>
+	 <h2>클래스 선택자</h2>
+	 <p>HTML 문서 내에 여러 개의 태그를 동일한 클래스명으로 지정하여 선택할 때 사용한다.</p>
+	 <pre> - .클래스명 {color : purple;} 와 같은 형태로 사용된다.</pre>
+	 <ul>
+		<li class="class1">클래스 선택자 테스트1</li>
+		<li class="class2">클래스 선택자 테스트2</li>
+		<li class="class1">클래스 선택자 테스트3</li>
+		<li class="class2">클래스 선택자 테스트4</li>
+		<li class="class1">클래스 선택자 테스트5</li>
+	 </ul>
+	 <hr>	
+	
+	 <h2>기본 속성 선택자</h2>
+	 <p>태그선택자와 함께 사용, 선택자 뒤에 []를 사용하여 [속성명=값] 형태로 사용</p>
+<pre>
+ 태그선택자[속성[=속성값]]{ css설정; }
+</pre>
+	<form>
+		<input type="text" name="inputId" class="c1"/><br/>
+		<input type="search" name="searchText"/><br/>
+		<input type="email" name="inputEmail" class="c1"/><br/>
+	</form>
+ </body>
+</html>
+<hr>
+
+	<h2>문자 속성 선택자</h2>
+	<p>특정 문자열 값을 확인하여 스타일을 적용하는 방식의 선택자</p>
+	<p>선택자[속성~=값] : 속성값에 값 포함 여부를 확인하여 해당 노드를 선택하는 선택자</p>
+	<p>선택자[속성|=값] : 속성 값에 값 포함여부를 확인, -구분하여 값을 인식하여 해당 노드를 선택 함</p>
+
+	<p class="class-c1">test1 글자 입니다.</p>
+	<p class="c1">test2 글자 입니다.</p>
+	<p class="c1">test3 글자 입니다.</p>
+	<p class="c2">test4 글자 입니다.</p>
+	<p class="class-c2">test5 글자 입니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
