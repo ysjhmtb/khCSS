@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>테두리 스타일</title>
+	<style>
+		div{
+			width:100px;
+			height:100px;
+			border-width:3px;
+		}
+		#b1{
+			border-style:none;
+		}
+		#b2{
+			border-style:hidden;
+			box-shadow:5px 5px 3px 2px gray;
+		}
+		#b3{
+			border-style:dotted;
+		}
+		#b4{
+			border-style:dashed;
+			border-top-color:red;
+		}
+		#b5{
+			border-style:double;
+			border-color:blue;
+		}
+		#b6{
+			border-style:groove;
+			border-top-left-radius:50px;
+		}
+		#b7{
+			border-style:inset;
+			border-bottom-right-radius:50px;
+		}
+		#b8{
+			border-style:outset;
+			border-top-left-radius:50px;
+			border-bottom-right-radius:50px;
+		}
+
+
+
+
+
+
+
+	</style>
+
+ </head>
+ <body>
+	<h1>테두리 스타일</h1>
+	<h3>border-style</h3>
+	<h4>border-style:none;</h4>
+	<div id="b1"></div>
+	<h4>border-style:hidden; & box-shadow:5px 5px 3px 2px gray</h4>
+	<div id="b2"></div>
+	<h4>border-style:dotted</h4>
+	<div id="b3"></div>
+	<h4>border-style:dashed; & border-top-color:red;</h4>
+	<div id="b4"></div>
+	<h4>border-style:double; & border-color:blue;</h4>
+	<div id="b5"></div>
+	<h4>border-style:groove; & border-top-left-radius:50px</h4>
+	<div id="b6"></div>
+	<h4>border-style:inset; & border-bottom-right-radius:50px;</h4>
+	<div id="b7"></div>
+	<h4>border-style:outset; & border-bottom-right-radius:50px; & border-top-left-radius:50px</h4>
+	<div id="b8"></div>
+	<h4>border-style:ridge; & box-shadow:5px 5px 3px 2px gray</h4>
+	<div id="b9"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+</html>

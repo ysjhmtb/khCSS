@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>목록 스타일</title>
+  <style>
+	#default-bullet{
+		list-style-type:disc;
+	}
+	#circle-bullet{
+		list-style-type:circle;
+	}
+	#none-bullet{
+		list-style-type:none;
+	}
+	#default-number{
+		list-style-type:decimal;
+	}
+	#zero-number{
+		list-style-type:decimal-leading-zero;
+	}
+
+
+  
+  </style>
+ </head>
+ <body>
+	<h1>목록 스타일</h1>
+	<h3>순서가 없는 목록</h3>
+	<h4>기본값(채워진 원 모양)</h4>
+	<ul id="default-bullet">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>Javascript</li>
+		<li>jQuery</li>
+		<li>web API</li>
+	</ul>
+	<h4>비어있는 원모양(circle)</h4>
+	<ul id="circle-bullet">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>Javascript</li>
+		<li>jQuery</li>
+		<li>web API</li>
+	</ul>
+	<h4>불릿기호가 없는 목록(none)</h4>
+	<ul id="none-bullet">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>Javascript</li>
+		<li>jQuery</li>
+		<li>web API</li>
+	</ul>
+	<hr>
+	<h3>순서가 있는 목록</h3>
+	<h4>1부터 시작하는 10진수(기본값)</h4>
+	<ol id="default-number">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>Javascript</li>
+		<li>jQuery</li>
+		<li>web API</li>
+	</ol>
+	<h4>1부터 시작하는 10진수(앞에 0 추가)</h4>
+	<ol id="zero-number">
+		<li>HTML5</li>
+		<li>CSS3</li>
+		<li>Javascript</li>
+		<li>jQuery</li>
+		<li>web API</li>
+	</ol>
+	
+
+
+
+
+
+
+
+
+
+ </body>
+</html>
