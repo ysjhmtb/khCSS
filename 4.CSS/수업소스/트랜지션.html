@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>트랜지션</title>
+  <style>
+	.trans1{
+		width:100px;
+		height:100px;
+		background:red;
+		border:1px solid black;
+		transition-duration:2s;
+	}
+	.trans1:hover{
+		background:yellow;
+	}
+	.trans2{
+		width:100px;
+		height:100px;
+		background:red;
+		border:1px solid black;
+		transition-property:background-color, transform, width, height;
+		transition-duration:2s,3s,1s,1s;
+	}
+	.trans2:hover{
+		width:200px;
+		height:200px;
+		transform:rotateZ(180deg);
+		background:yellow;
+	}
+
+	.trans3{
+		width:100px;
+		height:100px;
+		background:red;
+		border:1px solid black;
+		transition-duration:2s;
+		transition-timing-function:ease-in-out;
+	}
+	.trans3:hover{
+		background:yellow;
+		transform:rotateZ(180deg);
+	}
+
+	.trans4{
+		width:100px;
+		height:100px;
+		background:red;
+		border:1px solid black;
+		transition-duration:3s;
+		transition-delay:5s;
+	}
+	.trans4:hover{
+		background:yellow;
+		transform:rotateZ(180deg);
+	}
+  </style>
+ </head>
+ <body>
+ <h1>transition</h1>
+ <p>시간에 따라 요소의 스타일이 조금씩 바뀌는 걸 조절하는 속성</p>
+ <h3>트랜지션 진행시간 지정하기</h3>
+ <div class="trans1"></div>
+ <hr/>
+
+ <h3>트랜지션 단계별 진행시간 지정하기</h3>
+ <div class="trans2"></div>
+ <hr/>
+
+ <h3>트랜지션 단계별 속도 지정하기</h3>
+ <p>linear, ease-in, ease-out, ease....</p>
+ <div class="trans3"></div>
+ <hr/>
+
+ <h3>트랜지션 시간 지연</h3>
+ <div class="trans4"></div>
+
+
+  
+ </body>
+</html>

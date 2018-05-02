@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>변형2</title>
+  <style>
+	img{
+		width:250px;
+		height:200px;
+	}
+
+	.trans3d1:hover{
+		transform:perspective(300px) translate3d(100px, 100px, 100px);
+		-webkit-transform:perspective(300px) translate3d(100px, 100px, 100px);
+		-ms-transform:perspective(300px) translate3d(100px, 100px, 100px);
+	}
+	.trans3d2:hover{
+		transform:perspective(300px) rotateX(30deg);
+		-webkit-transform:perspective(300px) rotateX(30deg);
+		-ms-transform:perspective(300px) rotateX(30deg);
+	}
+	.trans3d3:hover{
+		transform:perspective(300px) rotateY(30deg);
+		-webkit-transform:perspective(300px) rotateY(30deg);
+		-ms-transform:perspective(300px) rotateY(30deg);
+	}
+	.trans3d4:hover{
+		transform:perspective(300px) rotateZ(30deg);
+		-webkit-transform:perspective(300px) rotateZ(30deg);
+		-ms-transform:perspective(300px) rotateZ(30deg);
+	}
+	.trans3d5:hover{
+		transform:perspective(300px) rotate3d(2.5, 1.5, -1.5, 30deg);
+	}
+  </style>
+ </head>
+ <body>
+ <h1>변형2</h1>
+ <h3>3차원 변형</h3>
+ <h4>지정한 크기만큼 x, y, z 이동</h4>
+ <img src="sample/image/flower1.PNG" class="trans3d1">
+ <hr>
+ <h4>지정한 크기만큼 x축으로 회전</h4>
+ <img src="sample/image/flower1.PNG" class="trans3d2">
+ <hr>
+ <h4>지정한 크기만큼 y축으로 회전</h4>
+ <img src="sample/image/flower1.PNG" class="trans3d3">
+ <hr>
+ <h4>지정한 크기만큼 z축으로 회전</h4>
+ <img src="sample/image/flower1.PNG" class="trans3d4">
+ <hr>
+ <h4>지정한 크기만큼 x, y, z축으로 회전</h4>
+ <img src="sample/image/flower1.PNG" class="trans3d5">
+ </body>
+</html>

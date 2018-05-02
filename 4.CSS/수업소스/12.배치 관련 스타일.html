@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>배치 관련 스타일</title>
+ </head>
+ <style>
+	.outer{
+		position:relative;
+	}
+	.poisitioning{
+		border:1px solid black;
+	}
+	.first{
+		width:300px;
+		height:300px;
+		background:yellow;
+	}
+	.second{
+		width:200px;
+		height:200px;
+		background:yellowgreen;
+		position:absolute;
+		top:50px;
+		left:50px;
+	}
+	.third{
+		width:100px;
+		height:100px;
+		background:red;
+		position:absolute;
+		top:100px;
+		left:100px;
+	}
+	.fixed-area{
+		width:100px;
+		height:100px;
+		position:fixed;
+		background:red;
+	}
+	.vis-test{
+		width:100px;
+		height:100px;
+		border:1px solid black;
+	}
+	.vis1{
+		background:red;
+	}
+	.vis2{
+		background:yellow;
+		/*display:none;*/
+		visibility:hidden;
+	}
+	.vis3{
+		background:green;
+	}
+	
+	.wrap{
+		position:relative;
+	}
+	.z-test{
+		width:150px;
+		height:100px;
+		border:1px solid black;
+	}
+	.z1{
+		background:yellow;
+		position:absolute;
+		top:100px;
+		left:100px;
+		z-index:1000;
+	}
+	.z2{
+		background:green;
+		position:absolute;
+		top:50px;
+		left:50px;
+		z-index:100;
+	}
+	.z3{
+		background:red;
+		z-index:1;
+	}
+	
+	.float-test{
+		border:1px solid black;
+		width:100px;
+		height:50px;
+		/*float:left*/
+		float:right;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </style>
+
+ <body>
+	<h1>배치 관련 스타일</h1>
+	<h3>절대위치, 상대위치(position)</h3>
+	<div class="outer">
+		<div class="positioning first"></div>
+		<div class="positioning second"></div>
+		<div class="positioning third"></div>
+	</div>
+	<hr>
+	<h3>고정위치</h3>
+	<div class="positioning fixed-area"></div>
+	<hr>
+	<h3>페이지 내에 특정 영역을 보이거나 보이지 않게 하는 속성(visibility)</h3>
+	<div class="vis-test vis1"></div>
+	<div class="vis-test vis2"></div>
+	<div class="vis-test vis3"></div>
+	<p>display:none을 설정 할 경우 해당 영역 자체가 설정 되지 않음
+	visibility:hidden의 경우 영역은 잡혀 있는 상태로 내부 항목들이 출력 되지 않음</p>
+	<hr>
+	<h3>z-index</h3>
+	<p>페이지 안의 요소들을 순서대로 쌓는다(순번을 설정하는 속성)</p>
+	<div class="wrap">
+		<div class="z-test z1">요소1</div>
+		<div class="z-test z2">요소2</div>
+		<div class="z-test z3">요소3</div>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br>
+	<hr>
+	<h3>float속성</h3>
+	<p>페이지 내의 요소의 위치를 왼쪽, 오른쪽으로 지정하는 속성</p>
+	<div class="float-wrap">
+		<div class="float-test f1">111</div>
+		<div class="float-test f2">222</div>
+		<div class="float-test f3">333</div>
+		<div class="float-test f4">444</div>
+		<div class="float-test f5">555</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+ </body>
+</html>
