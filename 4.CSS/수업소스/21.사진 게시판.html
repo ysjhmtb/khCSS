@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>썸네일 게시판</title>
+  <style>
+	.gallery{
+		border:10px solid #d9fbfc;
+		height:300px;
+		width:450px;
+		margin-left:auto;
+		margin-right:auto;
+		overflow:visible;
+		box-shadow:10px 10px 20px #445354;
+		-webkit-box-shadow:10px 10px 20px #445354;
+		-ms-box-shadow:10px 10px 20px #445354;
+	}
+	.gallery ul{
+		margin-left:-30px;
+	}
+
+	.gallery ul li{
+		list-style:none;
+		display:inline-block;
+		padding:10px;
+	}
+
+	.gallery ul li .pic{
+		width:320px;
+		height:240px;
+		opacity:0;
+		visibility:hidden;
+		position:absolute;
+		margin-top:10px;
+		margin-left:-20px;
+		border:1px solid black;
+		box-shadow:2px 2px 10px #27858c;
+		-webkit-box-shadow:2px 2px 10px #27858c;
+		-ms-box-shadow:2px 2px 10px #27858c;
+	
+		transition:all 0.6s ease-in-out;
+		-webkit-transition:all 0.6s ease-in-out;
+		-ms-transition:all 0.6s ease-in-out;
+	}
+	.gallery ul li .small:hover{
+		cursor:pointer;
+	}
+	.gallery ul li:hover .pic{
+		width:320px;
+		height:240px;
+		opacity:1;
+		visibility:visible;
+		float:right;
+	}
+  </style>
+ </head>
+ <body>
+  <h1>사진 게시판</h1>
+  <hr>
+  <div class="gallery">
+	<ul>
+		<li>
+			<img src="sample/image/flower1.PNG" class="small" width="120" height="100"> 
+			<img src="sample/image/flower1.PNG" class="pic">
+		</li>
+		<li>
+			<img src="sample/image/flower2.PNG" class="small" width="120" height="100"> 
+			<img src="sample/image/flower2.PNG" class="pic">
+		</li>
+		<li>
+			<img src="sample/image/flower3.PNG" class="small" width="120" height="100"> 
+			<img src="sample/image/flower3.PNG" class="pic">
+		</li>
+		<li>
+			<img src="sample/image/flower4.PNG" class="small" width="120" height="100"> 
+			<img src="sample/image/flower4.PNG" class="pic">
+		</li>
+		<li>
+			<img src="sample/image/flower5.PNG" class="small" width="120" height="100"> 
+			<img src="sample/image/flower5.PNG" class="pic">
+		</li>
+		<li>
+			<img src="sample/image/flower1.PNG" class="small" width="120" height="100"> 
+			<img src="sample/image/flower1.PNG" class="pic">
+		</li>
+	</ul>
+  </div>
+ </body>
+</html>

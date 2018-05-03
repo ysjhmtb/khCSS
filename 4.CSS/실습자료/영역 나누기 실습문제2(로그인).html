@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>로그인 폼 만들기</title>
+	<style>
+		div{
+			border:1px solid black;
+			margin:0px;
+		}
+		.login{
+			width:300px;
+		}
+		.login_header{
+			height:50px;
+		}
+		.login_header_layer1{
+			width:59%;
+			height:100%;
+			float:left;
+		}
+		.login_header_layer2{
+			width:39.5%;
+			height:100%;
+			float:left;
+		}
+		.login_footer{
+			height:30px;
+			text-align:center;
+		}
+		#login_btn{
+			width:90%;
+			height:90%;
+			margin-top:2px;
+			margin-left:6px;
+		}
+
+	</style>
+
+ </head>
+ <body>
+	<h1>로그인 폼 만들기</h1>
+	<div	class="login">
+		<div class="login_header">
+			<div class="login_header_layer1">
+				<div class="login_id">
+					<input type="text" placeholder="ID를 입력하십시오"/>
+				</div>
+				<div class="login_pwd">
+					<input type="password" placeholder="PWD를 입력하십시오"/>
+				</div>
+			</div>
+			<div class="login_header_layer2">
+				<input type="button" value="로그인" id="login_btn"/>
+			</div>
+		</div>
+		<div class="login_footer">
+			<a href="#">회원가입</a>
+			<a href="#">ID/PW 찾기</a>
+		</div>
+	</div>
+ </body>
+</html>
+
+
+
+
+

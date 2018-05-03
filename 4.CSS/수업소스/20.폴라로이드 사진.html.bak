@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>폴라로이드 사진</title>
+  <style>
+	.polaroid{
+		position:relative;
+		left:100px;
+		top:50px;
+		width:300px;
+		padding:10px 10px 20px 10px;
+		border:1px solid gray;
+		background:white;
+		box-shadow:2px 2px 3px rgba(121, 135, 158, 0.3);
+		-webkit-box-shadow:2px 2px 3px rgba(121, 135, 158, 0.3);
+		-ms-box-shadow:2px 2px 3px rgba(121, 135, 158, 0.3);
+	}
+	
+	.caption{
+		text-align:center;
+		font-family:"바탕";
+		font-weight:bold;
+		font-size:16px;
+		color:#1b2103;
+	}
+
+  </style>
+ </head>
+ <body>
+  <h1>폴라로이드 느낌으로 이미지 출력</h1>
+  <hr>
+  <div class="polaroid rotate">
+	<img src="sample/image/river1.PNG" width="300" height="180">
+	<p class="caption">노을이 참 멋있군요~!!</p>
+  </div>
+ </body>
+</html>
