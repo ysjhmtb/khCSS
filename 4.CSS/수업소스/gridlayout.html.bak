@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>부트스트렙(그리드)</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<style>
+		.row1{
+			border:1px solid black;
+			background:pink;
+			height:80px;
+		}
+		.row2{
+			border:1px solid black;
+			background:red;
+		}
+		.row3{
+			border:1px solid black;
+			background:yellow;
+		}
+		label, input{
+			border:1px solid black;
+		}
+	</style>
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+ </head>
+ <body>
+	<h1>그리드 레이아웃</h1>
+	<h3 align="center" class="d-none d-lg-block d-md-none">현재 데스크탑 화면, 노트북 화면 입니다.</h3>
+	<h3 align="center" class="d-none d-md-block d-lg-none">노트북 화면 입니다.</h3>
+	<h3 align="center" class="d-none d-sm-block d-md-none">태블릿 화면 입니다.</h3>
+	<h3 align="center" class="d-block d-sm-none">스마트폰 화면 입니다.</h3>
+	<br>
+	<div class="row">
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">1</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">2</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">3</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">4</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">5</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">6</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">7</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">8</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">9</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">10</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">11</div>
+		<div class="col-lg-1 col-md-2 col-sm-3 col-6 row1">12</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 col-md-4 col-sm-6 col-12 row2">1</div>
+		<div class="col-lg-2 col-md-4 col-sm-6 col-12 row2">2</div>
+		<div class="col-lg-2 col-md-4 col-sm-6 col-12 row2">3</div>
+		<div class="col-lg-2 col-md-4 col-sm-6 col-12 row2">4</div>
+		<div class="col-lg-2 col-md-4 col-sm-6 col-12 row2">5</div>
+		<div class="col-lg-2 col-md-4 col-sm-6 col-12 row2">6</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2 col-md-1 col-sm-1 d-xs-none row3">1</div>
+		<div class="col-lg-4 col-md-5 col-sm-5 d-xs-none row3">2</div>
+		<div class="col-lg-4 col-md-5 col-sm-5 d-xs-none row3">3</div>
+		<div class="col-lg-2 col-md-1 col-sm-1 d-xs-none row3">4</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<label class="col-lg-2">아이디 : </label>
+			<input class="col-lg-4" type="text" placeholder="아이디를 입력하십시오"/>
+		</div>
+		<div class="row">
+			<label class="col-lg-2">비밀번호 : </label>
+			<input class="col-lg-4" type="password" placeholder="비밀번호를 입력하십시오"/>
+		</div>
+		<div class="row btn-group-toggle" data-toggle="buttons">
+		  <label class="col-lg-2">취미 : </label>
+		  <label class="btn btn-secondary active col-lg-2">
+			<input type="checkbox" autocomplete="off"> 
+			축구
+		  </label>
+		  <label class="btn btn-secondary active col-lg-2">
+			<input type="checkbox" autocomplete="off"> 
+			농구
+		  </label>
+		  <label class="btn btn-secondary active col-lg-2">
+			<input type="checkbox" autocomplete="off"> 
+			노래
+		  </label>
+		</div>
+		<div class="row">
+			<div class="input-group mb-3">
+			  <div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">아이디</span>
+			  </div>
+			  <input type="text" class="form-control col-lg-3" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+			</div>
+			
+		</div>
+		<div class="row">
+			<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" 	title="Tooltip">
+				  Tooltip test
+			</button>
+		</div>
+	</div>
+
+ </body>
+</html>

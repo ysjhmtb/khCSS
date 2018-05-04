@@ -1,0 +1,45 @@
+header{
+	color:white;
+	text-shadow:1px 1px 2px lightgray;
+}
+
+nav{
+	font-weight:bold;
+	text-shadow:1px 1px 2px gray;
+}
+
+
+section{
+	background:skyblue;
+	text-align:center;
+}
+
+.content{
+	padding:10px 10px;
+	border:1px solid black;
+	height:200px;
+	display:inline-block;
+}
+
+.content:hover{
+	background:yellow;
+	color:red;
+	border:3px solid skyblue;
+}
+
+aside{
+	background:skyblue;
+	height:100%;
+}
+
+aside p:hover{
+	background:yellow;
+	color:red;
+}
+
+footer{
+	background:gray;
+	height:200px;
+	color:white;
+	text-align:center;
+}
